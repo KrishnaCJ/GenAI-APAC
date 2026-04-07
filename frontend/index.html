@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Guide Agent</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Work+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">GenAI Asia Pacific Hackathon</p>
+          <h1>Farm Guide Agent</h1>
+          <p class="subtitle">
+            A small team of AI agents that collaborate to recommend crops, weather risk, and
+            practical next steps for new-age farmers.
+          </p>
+          <div class="card" id="today-advice">Today: Loading advice...</div>
+        </div>
+        <div class="hero-panel">
+          <div class="card">
+            <h2>Ask your farm question</h2>
+            <label>
+              Location
+              <input id="location" placeholder="e.g., Pune" />
+            </label>
+            <label>
+              Month
+              <select id="month">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </label>
+            <label>
+              Soil Type
+              <select id="soil">
+                <option value="loamy">Loamy</option>
+                <option value="sandy">Sandy</option>
+                <option value="clay">Clay</option>
+              </select>
+            </label>
+            <div class="actions">
+              <button id="submit">Get Advice</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card" id="crop-card">
+          <h3>Crop Advisor Agent</h3>
+          <p>Waiting for your request.</p>
+        </article>
+        <article class="card" id="weather-card">
+          <h3>Weather Intelligence Agent</h3>
+          <p>Waiting for your request.</p>
+        </article>
+        <article class="card" id="decision-card">
+          <h3>Decision Agent</h3>
+          <p>Waiting for your request.</p>
+        </article>
+        <article class="card" id="market-card">
+          <h3>Monetization Insight</h3>
+          <p>Waiting for your request.</p>
+        </article>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
